@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body h1{
     font-weight: lighter;
@@ -18,11 +18,11 @@ body h1{
     padding: 1em 0em;
 }
 form{
-    background-color: #8d0230;
-    border: 2px solid #770221;
+    background-color: #002927;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     width: 300px;
-    padding: 1.5em;
+    padding: 2em 1.5em;
     line-height: 3;
     position: relative;
 }
@@ -32,13 +32,13 @@ form div{
 form div#output{
     background-color: #fff;
     padding-left: 10px;
+    margin-top: 10px;
     height: 40px;
     border-radius: 5px;
     overflow: hidden;
 }
-form div#output i{
-    margin: 0px 5px;
-    color: #8d0230;
+form div:nth-child(3){
+    margin-top: 10px;
 }
 form input[type ="number"],form input[type ="checkbox"]{
     position: absolute;
@@ -46,7 +46,7 @@ form input[type ="number"],form input[type ="checkbox"]{
     top: 1.3em;
 }
 form label{
-    color: #645d00;
+    color: #ffffff;
 }
 form input[type ="number"]{
     width: 3em;
@@ -55,9 +55,10 @@ form input[type ="number"]{
 form button,form input[type ="submit"]{
     cursor: pointer;
     padding: 5px;
+    margin-top: 20px;
     color: #ffffff;
-    border: 1px solid #8890ff;
-    background-color: #770221;
+    border: 1px solid #fdfeff;
+    background-color: #021a1b;
     border-radius: 3px;
 }
 form input[type ="submit"]{
@@ -72,7 +73,7 @@ form input[type ="submit"]:active{
     transform: scale(1.01);
 }
 form input[type ="checkbox"]{
-    accent-color: #770221;
+    accent-color: #01031a;
     width: 15px;
     height: 15px;
 }
