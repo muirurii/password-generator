@@ -12,6 +12,21 @@ body{
     align-items: center;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#notification{
+    padding: 0.5em 2em;
+    background-color: rgba(0, 219, 48, 0.596);
+    border-radius: 3px;
+    visibility: hidden;
+}
+#notification.show{
+    visibility: visible;
+    animation: notify 1500ms ease-out forwards;
+}
+@keyframes notify{
+    0%{transform: translateY(-40%);}
+    95%{transform: translateY(25%);}
+    100%{transform: translateY(-150%);}
+}
 body h1{
     font-weight: lighter;
     font-size: 1.5em;
