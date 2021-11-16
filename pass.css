@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body h1{
+    font-weight: lighter;
+    font-size: 1.5em;
+    padding: 1em 0em;
+}
+form{
+    background-color: #8d0230;
+    border: 2px solid #770221;
+    border-radius: 5px;
+    width: 300px;
+    padding: 1.5em;
+    line-height: 3;
+    position: relative;
+}
+form div{
+    position: relative;
+}
+form div#output{
+    background-color: #fff;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+form div#output i{
+    margin: 0px 5px;
+    color: #8d0230;
+}
+form input[type ="number"],form input[type ="checkbox"]{
+    position: absolute;
+    right: 1em;
+    top: 1.3em;
+}
+form label{
+    color: #645d00;
+}
+form input[type ="number"]{
+    width: 3em;
+    outline: none;
+}
+form button,form input[type ="submit"]{
+    cursor: pointer;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #8890ff;
+    background-color: #770221;
+    border-radius: 3px;
+}
+form input[type ="submit"]{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+form input[type ="submit"]:hover{
+    opacity: 0.7;
+}
+form input[type ="submit"]:active{
+    transform: scale(1.01);
+}
+form input[type ="checkbox"]{
+    accent-color: #770221;
+    width: 15px;
+    height: 15px;
+}
