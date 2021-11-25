@@ -49,12 +49,7 @@ function generateFromSelection(includeUpper,includeLower,includeNumber,includeSy
 }
 function copyFunction(){
     if(!outputElement.textContent.length) return '';
-    const textarea = document.createElement('textarea');
-    textarea.value = outputElement.textContent;
-    document.body.append(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
+    navigator.clipboard.writeText(outputElement.textContent);
     notification.classList.add('show');
     setTimeout(()=>notification.classList.remove('show'),1500);
 }
